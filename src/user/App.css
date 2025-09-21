@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.box span{
+    font-size: 30px;
+}
+.box p{
+    margin-top: 1rem;
+
+}
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+.buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f0f0;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px #ccc;
+    width:50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.buttons button{
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+}
+.buttons button:first-child,.submit{
+    background-color: rgb(10, 199, 233);
+    box-shadow: 1px 1px 5px rgb(48, 155, 236);
+}
+.buttons button:first-child:hover,.submit:hover{
+    transform: translateY(-2px);
+    transition: all .3s;
+    background-color: rgb(43, 152, 172);
+}
+.buttons button:last-child,.close{
+    background-color: rgb(233, 10, 43);
+    box-shadow: 1px 1px 5px red;
+}
+.buttons button:last-child:hover,.close:hover{
+    background-color: rgb(148, 33, 50);
+    transform: translateY(-2px);
+    transition: all .3s;
+}
+form {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 8px;
+  padding: 15px 20px;
+  min-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 999;
+
+  /* Animation */
+  animation: dropDown 0.3s ease-out;
+}
+
+/* Animation entrée */
+@keyframes dropDown {
+  from {
+    transform: translateX(-50%) translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.close,.submit {
+    border: none;
+}
