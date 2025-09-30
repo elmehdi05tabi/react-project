@@ -1,0 +1,50 @@
+@import "../asset/img/sass/variables.scss" ; 
+.container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255,0.3);
+    margin-top: 1.5rem;
+    color: white;
+}
+.container_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 40vh;
+}
+.separator {
+    margin-top: 2rem;
+    border-top: 1px solid rgb(255, 255, 255,0.5);
+    width: 100%;
+}
+.date {
+    display: flex;
+    gap:$weather-info-gap ;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+.tempurature {
+    display: flex;
+    gap:$weather-info-gap ;
+    font-size: 3rem;
+}
+.info {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    width: 50vw;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.3);
+    gap: calc($weather-info-gap + 10%);
+    .border_right{
+        border-right: 3px solid rgb(255, 255, 255,0.5) ;
+        padding-right: 1.5rem;
+    }
+}
